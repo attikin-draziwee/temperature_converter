@@ -23,7 +23,7 @@ impl Temperature {
             },
             Measure::Fahrenheit => match temp_measure {
                 Measure::Fahrenheit => self.value,
-                Measure::Celsius => self.value * 9.0 / 5.0 + 32.0,
+                Measure::Celsius => (self.value - 32.0) * 5.0 / 9.0,
                 Measure::Kelvin => (self.value + 459.67) * 5.0 / 9.0,
             },
             Measure::Kelvin => match temp_measure {

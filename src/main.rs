@@ -5,7 +5,9 @@ fn main() {
     let args: Vec<String> = args().collect();
 
     if args.len() < 4 {
-        println!("⛔ Invalid input. You must enter two arguments.\n`Examples:\n# 20 fahrenheit to_celsius\n# 40 celsius to_fahrenheit");
+        println!(
+            "⛔ Invalid input. You must enter two arguments.\n`Examples:\n# 20 fahrenheit to_celsius\n# 40 celsius to_fahrenheit"
+        );
         return;
     }
 
